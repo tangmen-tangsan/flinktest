@@ -1,0 +1,5 @@
+Tom,/opt,1000
+Marry,cart,2000
+jack,ditile,3000
+Tom,home,4000
+jack,home,5000
