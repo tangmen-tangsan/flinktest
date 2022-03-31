@@ -37,11 +37,11 @@ public class TranformMapTest {
 
 
     }
-    public static class MyMap implements MapFunction<Event,String>{
+        public static class MyMap implements MapFunction<Event,String>{
 
-        @Override
-        public String map(Event value) throws Exception {
-            return value.user;
-        }
+            @Override
+            public String map(Event value) throws Exception {
+                return value.user;
+            }
     }
 }

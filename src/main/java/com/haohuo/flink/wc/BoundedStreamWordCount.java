@@ -15,7 +15,7 @@ public class BoundedStreamWordCount {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
         //2.读取文件
-        DataStreamSource<String> readTextFile = env.readTextFile("Input/words.txt");
+        DataStreamSource<String> readTextFile = env.readTextFile("Input/words .txt");
 
         //3.将每一行数据进行分词，转换成二元数组类型
         SingleOutputStreamOperator<Tuple2<String, Long>> wordAndOneTuple = readTextFile.flatMap((String line, Collector<Tuple2<String, Long>> out) -> {
